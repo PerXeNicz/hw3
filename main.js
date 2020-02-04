@@ -16,7 +16,6 @@ function sol(){
         document.querySelector('.status').textContent='Wrong input!!!';
         document.querySelector('.status').setAttribute('style','background-color:red;');
         document.querySelector('#turn').textContent='You have '+count+' turns left';
-        output = '';
     }
     else if(input>ans){
         document.querySelector('.pa').textContent='Previous answer: '+output;
