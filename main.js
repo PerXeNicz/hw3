@@ -13,13 +13,13 @@ function sol(){
     output += input +' ';
     if(input<0||input>100||input==''){
         document.querySelector('.pa').textContent='Previous answer: '+output ;
-        document.querySelector('.status').textContent='Wrong input!!!';
+        document.querySelector('.status').textContent='Wrong input!';
         document.querySelector('.status').setAttribute('style','background-color:red;');
         document.querySelector('#turn').textContent='You have '+count+' turns left';
     }
     else if(input>ans){
         document.querySelector('.pa').textContent='Previous answer: '+output;
-        document.querySelector('.status').textContent='Wrong!!!';
+        document.querySelector('.status').textContent='Wrong!';
         document.querySelector('.status').setAttribute('style','background-color:red;');
         document.querySelector('.guide').textContent='Last guess was too high.';
         count--;
@@ -27,7 +27,7 @@ function sol(){
         console.log(count);
     }else if(input<ans){
         document.querySelector('.pa').textContent='Previous answer: '+output ;
-        document.querySelector('.status').textContent='Wrong!!!';
+        document.querySelector('.status').textContent='Wrong!';
         document.querySelector('.status').setAttribute('style','background-color:red;');
         document.querySelector('.guide').textContent='Last guess was too low.';
         count--;
@@ -37,7 +37,7 @@ function sol(){
         document.querySelector('.int_tex').setAttribute('disabled',true);
         document.querySelector('.button').setAttribute('disabled',true);
         document.querySelector('.status').setAttribute('style','background-color:green;');
-        document.querySelector('.status').textContent='You win';
+        document.querySelector('.status').textContent='You win!';
         document.querySelector('#turn').textContent='You have '+count+' turns left';
         x.style.display="block";
         count=10;
